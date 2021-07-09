@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html,
 #root {
@@ -39,12 +43,20 @@ h2 {
 }
 
 .App-playlist {
-  display: flex;
+  display: grid;
+  grid-template: auto auto / 48% 48%;
+  grid-row-gap: 2rem;
   justify-content: space-between;
+  width: 100%;
+  margin: 1.16rem auto;
   width: 100%;
 }
 
 @media only screen and (max-width: 1020px) {
+  .App {
+    padding: 0 10% 10%;
+}
+
   .App-playlist {
     align-items: center;
     flex-direction: column;

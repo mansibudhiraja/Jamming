@@ -18,9 +18,9 @@ class CreatedPlaylist extends React.Component {
     
     render(){
         return (
-            <div className="created-Playlist">
+            <div className="PlaylistList">
                 <h2>Created Playlists</h2>
-                <div className="playlistName">
+                <div className="PlaylistListContainer">
                     {
                         this.mapItems()
                     }

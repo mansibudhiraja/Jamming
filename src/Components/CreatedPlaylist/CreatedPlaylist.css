@@ -1,22 +1,29 @@
-.created-Playlist {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 950px;
-    overflow-y: scroll;
-    padding: .88rem;
-    background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
-  }
-
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+.PlaylistList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
 }
 
-@media only screen and (max-width: 1020px) {
-  .SearchResults {
-    width: 90%;
-    margin-bottom: 2rem;
-  }
+.PlaylistList h2 {
+  padding: 0 .88rem;
+}
+
+.PlaylistListContainer {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.Refresh-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
